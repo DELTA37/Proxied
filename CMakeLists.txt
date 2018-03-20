@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10.2)
+include_directories(include)
+add_library(Proxied src/Proxied/proxied.cpp)
+add_executable(prog src/main.cpp)
+target_link_libraries(prog Proxied)
